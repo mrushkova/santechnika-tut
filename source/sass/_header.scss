@@ -1,0 +1,111 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__up {
+  background-image: url(../img/logo_grohe.png);
+  background-position: center;
+  background-size: cover;
+  height: 124px;
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 17px 91px 9px;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  color: #808080;
+  font-size: 13px;
+  font-weight: bold;
+  padding-right: 50px;
+}
+
+.header__contacts p {
+  margin: 4px 0 0;
+}
+
+.header__phone {
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.header__btn {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  padding: 9px 13px;
+  color: #00a7df;
+  box-shadow: inset 0 0 0 1px #00a4dd;
+  text-decoration: none;
+}
+
+.header__down {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header__down img {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.owl-dots {
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__inner {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 17px 30px 9px;
+  }
+
+  .header__logo {
+    margin-right: 20px;
+  }
+
+  .header__contacts {
+    padding-right: 20px;
+  }
+
+  .header__down img {
+    max-height: 250px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .header__inner {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .header__logo {
+    margin: 20px 0 25px;
+  }
+
+  .header__contacts {
+    padding-right: 0;
+  }
+
+  .header__brand {
+    margin-bottom: 13px;
+  }
+
+  .header__down img {
+    max-height: 140px;
+  }
+}

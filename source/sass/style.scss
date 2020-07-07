@@ -1,0 +1,192 @@
+@import "../../node_modules/normalize.css/normalize";
+@import "./fonts";
+@import "./global";
+@import "./header";
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collection,
+.infoblock {
+  display: flex;
+  justify-content: space-between;
+  color: #142f4f;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 24%;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  line-height: 21px;
+}
+
+.imgs {
+  height: 84%;
+  background-size: cover;
+  background-position: center;
+}
+
+.caption {
+  background-color: #142f4f;
+  text-align: center;
+}
+
+.infoblock {
+  align-self: flex-start;
+}
+
+.blockimg {
+  max-width: 480px;
+  max-height: 360px;
+  width: 100%;
+  margin-right: 36px;
+}
+
+.info {
+  max-width: 740px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.tech {
+  order: 1;
+  margin-right: 0;
+  margin-left: 36px;
+}
+
+footer {
+  flex-shrink: 0;
+  padding-top: 43px;
+  background-color: #142f4f;
+  margin-top: 84px;
+}
+
+a {
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.group {
+  width: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-up img {
+    height: 118px;
+    position: center;
+    object-fit: cover;
+  }
+
+  .header-inner,
+  .collection,
+  .items {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .collection,
+  .infoblock {
+    font-size: 18px;
+    line-height: 20px;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+
+  .items,
+  .info,
+  .header-inner {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .item {
+    width: 45%;
+  }
+
+  .blockimg,
+  .tech {
+    order: 0;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .header-up img {
+    height: 118px;
+    position: center;
+    object-fit: cover;
+  }
+
+  .header-down img {
+    height: 140px;
+    position: center;
+    object-fit: cover;
+  }
+
+  .header-inner,
+  .collection,
+  .items {
+    flex-direction: column;
+  }
+
+  .gallery {
+    justify-content: center;
+  }
+
+  .collection,
+  .infoblock {
+    font-size: 18px;
+    line-height: 20px;
+    flex-wrap: wrap;
+  }
+
+  .caption {
+    max-width: 290px;
+  }
+
+  .item,
+  .info,
+  .header-inner {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .blockimg,
+  .tech {
+    order: 0;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}

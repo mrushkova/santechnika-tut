@@ -541,16 +541,7 @@ section {
 .infoblock__content--2 {
   flex-direction: row-reverse; }
 
-footer {
-  flex-shrink: 0;
-  padding-top: 43px;
-  background-color: #142f4f;
-  margin-top: 84px; }
-
-.group {
-  width: auto; }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .infoblock {
     font-size: 18px;
     line-height: 20px;
@@ -567,8 +558,7 @@ footer {
     width: 100%;
     margin: 0 0 20px 0; } }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .infoblock {
     font-size: 18px;
     line-height: 20px;
@@ -583,3 +573,12 @@ footer {
     order: 0;
     width: 100%;
     margin: 0 0 20px 0; } }
+
+footer {
+  flex-shrink: 0;
+  padding-top: 43px;
+  background-color: #142f4f;
+  margin-top: 84px; }
+
+.group {
+  width: auto; }

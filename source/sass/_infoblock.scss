@@ -31,3 +31,48 @@
 .infoblock__content--2 {
   flex-direction: row-reverse;
 }
+
+@media only screen and (max-width: 1024px) {
+  .infoblock {
+    font-size: 18px;
+    line-height: 20px;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+
+  .info {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .blockimg,
+  .tech {
+    order: 0;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .infoblock {
+    font-size: 18px;
+    line-height: 20px;
+    flex-wrap: wrap;
+  }
+
+  .info {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .blockimg,
+  .tech {
+    order: 0;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}

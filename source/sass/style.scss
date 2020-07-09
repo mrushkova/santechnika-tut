@@ -1,11 +1,11 @@
 @import "../../node_modules/normalize.css/normalize";
 @import "./fonts";
 @import "./global";
-@import "./header";
+@import "./owl";
 
+@import "./header";
 @import "./popular";
 
-.collection,
 .infoblock {
   display: flex;
   justify-content: space-between;
@@ -16,21 +16,10 @@
   margin: 20px 0;
 }
 
-.items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .imgs {
   height: 84%;
   background-size: cover;
   background-position: center;
-}
-
-.caption {
-  background-color: #142f4f;
-  text-align: center;
 }
 
 .infoblock {
@@ -64,23 +53,11 @@ footer {
   margin-top: 84px;
 }
 
-a {
-  color: #ffffff;
-  margin-top: 10px;
-}
-
 .group {
   width: auto;
 }
 
 @media only screen and (max-width: 768px) {
-  .collection,
-  .items {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .collection,
   .infoblock {
     font-size: 18px;
     line-height: 20px;
@@ -88,16 +65,11 @@ a {
     align-self: center;
   }
 
-  .items,
   .info {
     width: 100%;
     margin-top: 10px;
     font-size: 16px;
     line-height: 18px;
-  }
-
-  .item {
-    width: 45%;
   }
 
   .blockimg,
@@ -110,29 +82,13 @@ a {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  .collection,
-  .items {
-    flex-direction: column;
-  }
-
-  .gallery {
-    justify-content: center;
-  }
-
-  .collection,
   .infoblock {
     font-size: 18px;
     line-height: 20px;
     flex-wrap: wrap;
   }
 
-  .caption {
-    max-width: 290px;
-  }
-
-  .item,
-  .info,
-  .header-inner {
+  .info {
     width: 100%;
     margin-top: 10px;
     font-size: 16px;

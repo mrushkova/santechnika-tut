@@ -61,15 +61,6 @@
   overflow: hidden;
 }
 
-.owl-dots {
-  position: absolute;
-  z-index: 10;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
 @media only screen and (max-width: 1024px) {
   .header__inner {
     flex-wrap: wrap;

@@ -313,13 +313,16 @@ template {
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
   margin: 0 auto;
   padding: 0;
-  font-family: "Roboto", "Arial", sans-serif; }
+  background-color: #ffffff; }
 
 .container {
-  width: 87%;
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto; }
 
@@ -329,9 +332,24 @@ body {
   padding: 10px 20px;
   border-radius: 4px; }
 
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 42px; }
+
 .header {
   display: flex;
   flex-direction: column; }
+
+.header h1 {
+  display: none; }
 
 .header__up {
   background-image: url(../img/logo_grohe.png);
@@ -413,17 +431,78 @@ body {
   .header__down img {
     max-height: 140px; } }
 
-main {
+.popular {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: #ffffff; }
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-between; }
+
+.popular h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #142f4f; }
+
+.popular__gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+.popular__item {
+  width: 23%;
+  margin-right: 33px;
+  padding: 0; }
+
+@media only screen and (max-width: 1300px) {
+  .popular__item {
+    margin-right: 20px; } }
+
+.popular__item:nth-child(4) {
+  margin-right: 0; }
+
+.popular__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 21px;
+  margin: 0;
+  cursor: pointer; }
+
+.popular__item img {
+  width: 100%;
+  object-fit: cover; }
+
+.popular__item p {
+  background-color: #142f4f;
+  text-align: center;
+  margin-top: -1px;
+  margin-bottom: 0;
+  padding: 11px 0 12px 13px; }
+
+@media only screen and (max-width: 1024px) {
+  .popular {
+    padding: 0 70px; }
+  .popular__gallery {
+    justify-content: space-around; }
+  .popular__item {
+    width: 45%;
+    max-width: 290px;
+    margin-bottom: 30px; }
+  .popular__item:nth-child(2) {
+    margin-right: 0; } }
+
+@media only screen and (max-width: 768px) {
+  .popular {
+    padding: 0 10px; }
+  .popular__gallery {
+    justify-content: center; }
+  .popular h2 {
+    text-align: center; }
+  .popular__item {
+    width: 100%;
+    margin-bottom: 21px;
+    margin-right: 0; } }
 
 .collection,
 .infoblock {
@@ -439,16 +518,6 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-
-.item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 24%;
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-  line-height: 21px; }
 
 .imgs {
   height: 84%;
@@ -493,11 +562,6 @@ a {
   width: auto; }
 
 @media only screen and (max-width: 768px) {
-  .header-up img {
-    height: 118px;
-    position: center;
-    object-fit: cover; }
-  .header-inner,
   .collection,
   .items {
     flex-wrap: wrap;
@@ -509,8 +573,7 @@ a {
     flex-wrap: wrap;
     align-self: center; }
   .items,
-  .info,
-  .header-inner {
+  .info {
     width: 100%;
     margin-top: 10px;
     font-size: 16px;
@@ -525,15 +588,6 @@ a {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  .header-up img {
-    height: 118px;
-    position: center;
-    object-fit: cover; }
-  .header-down img {
-    height: 140px;
-    position: center;
-    object-fit: cover; }
-  .header-inner,
   .collection,
   .items {
     flex-direction: column; }

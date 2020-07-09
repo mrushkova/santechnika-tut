@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.header h1 {
+  display: none;
+}
+
 .header__up {
   background-image: url(../img/logo_grohe.png);
   background-position: center;

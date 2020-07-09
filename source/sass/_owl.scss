@@ -6,11 +6,13 @@
   right: 0;
   text-align: center;
 }
+
+.popular__gallery .owl-dots {
+  display: none;
+}
+
 @media only screen and (max-width: 1024px) {
   .owl-dots {
     display: none;
   }
-}
-
-@media only screen and (max-width: 768px) {
 }

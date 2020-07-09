@@ -5,46 +5,7 @@
 
 @import "./header";
 @import "./popular";
-
-.infoblock {
-  display: flex;
-  justify-content: space-between;
-  color: #142f4f;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: bold;
-  margin: 20px 0;
-}
-
-.imgs {
-  height: 84%;
-  background-size: cover;
-  background-position: center;
-}
-
-.infoblock {
-  align-self: flex-start;
-}
-
-.blockimg {
-  max-width: 480px;
-  max-height: 360px;
-  width: 100%;
-  margin-right: 36px;
-}
-
-.info {
-  max-width: 740px;
-  font-size: 18px;
-  line-height: 21px;
-  color: #000000;
-}
-
-.tech {
-  order: 1;
-  margin-right: 0;
-  margin-left: 36px;
-}
+@import "./infoblock";
 
 footer {
   flex-shrink: 0;

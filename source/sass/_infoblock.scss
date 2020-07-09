@@ -1,0 +1,33 @@
+.infoblock h2 {
+  color: #142f4f;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+  align-self: flex-start;
+}
+
+.infoblock__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoblock__content img {
+  object-fit: cover;
+  margin-right: 37px;
+}
+.infoblock__text {
+  display: flex;
+  flex-direction: column;
+  padding-right: 25px;
+}
+.infoblock__content p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 0;
+}
+
+.infoblock__content--2 {
+  flex-direction: row-reverse;
+}

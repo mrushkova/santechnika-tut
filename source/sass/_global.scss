@@ -11,7 +11,6 @@ body {
 }
 
 .container {
-  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
@@ -28,6 +27,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 84px;
 }
 
 section {
@@ -35,6 +35,11 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.group {
+  display: flex;
+  flex-flow: column;
 }
 
 @media only screen and (max-width: 1024px) {

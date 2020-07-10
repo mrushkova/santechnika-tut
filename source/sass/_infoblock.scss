@@ -33,46 +33,34 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .infoblock {
-    font-size: 18px;
-    line-height: 20px;
-    flex-wrap: wrap;
-    align-self: center;
+  .infoblock h2 {
+    margin: 20px auto;
+    text-align: center;
   }
 
-  .info {
-    width: 100%;
-    margin-top: 10px;
-    font-size: 16px;
-    line-height: 18px;
+  .infoblock__content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
   }
 
-  .blockimg,
-  .tech {
-    order: 0;
+  .infoblock__content img {
     width: 100%;
-    margin: 0 0 20px 0;
+    margin-right: 0;
+    margin-bottom: 13px;
+  }
+
+  .infoblock__text {
+    padding-right: 0;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .infoblock {
-    font-size: 18px;
-    line-height: 20px;
-    flex-wrap: wrap;
+  .infoblock__content {
+    padding: 0;
   }
 
-  .info {
-    width: 100%;
-    margin-top: 10px;
-    font-size: 16px;
-    line-height: 18px;
-  }
-
-  .blockimg,
-  .tech {
-    order: 0;
-    width: 100%;
-    margin: 0 0 20px 0;
+  .infoblock__text {
+    padding: 0 10px;
   }
 }

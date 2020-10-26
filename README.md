@@ -1,20 +1,14 @@
-# Сантехника Тут
 
-Тестовое задание для интернет-магазина сантехники "Сантехника Тут"
+# Test tusk for plumbing supply store "Santehnika tut"
 
-## Техническое задание
-
-- Стандарты вёрстки: HTML5, CSS3, прогрессивное улучшение
-- Сетка - Flexbox
-- Адаптивность сетки: мобильная, планшетная и десктопная версии. Desktop First
-  На всех промежуточных разрешениях используется резиновая вёрстка  
-- Используемая методология: БЭМ
-- Используемые библиотеки: jQuery, плагин Owl Carousel 2
-- Используемый препроцессор: Sass (SCSS)
-- Используемый инструмент автоматизации: Gulp
-- Кроссбраузерность: Chrome, Firefox, Safari, Edge, Internet Explorer 11
-- Макет предоставляется в Figma https://www.figma.com/file/Duf6rs0dy8VLirDIOZ78ci/Branding-Page-(Copy)?node-id=0%3A1
-
-
-
-
+## Technical task
+- Layout standards: HTML5, CSS3, progressive enhancement
+- Flexbox layout
+- Responsiveness of the grid: mobile, tablet and desktop versions
+- Libs: jQuery, plugin Owl Carousel 2
+- Methodology: BEM
+- Preprocessor: Sass (SCSS)
+- Automation tool: Gulp
+- Cross-browser compatibility: Chrome, Firefox, Safari, Edge, Internet Explorer 11.
+- Layout is provided in Figma https://www.figma.com/file/Duf6rs0dy8VLirDIOZ78ci/Branding-Page-(Copy)?node-id=0%3A1
+- Content language: Russian

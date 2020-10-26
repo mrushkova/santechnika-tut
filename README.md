@@ -1,5 +1,5 @@
 
-# Test tusk for plumbing supply store "Santehnika tut"
+# Test task for plumbing supply store "Santehnika tut"
 
 ## Technical task
 - Layout standards: HTML5, CSS3, progressive enhancement
